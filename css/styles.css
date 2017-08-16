@@ -1,7 +1,6 @@
 /* MAIN */
 
 body{
-
 }
 
 /* MENU */
@@ -9,9 +8,10 @@ body{
 .header {
 	float: center;
 	position: relative;
-	width: 1000px;
+	width: 1280px;
 	height: 120px;
 	margin: 0 auto;
+	top: 0;
 }
 
 .menu {
@@ -26,7 +26,7 @@ body{
 	overflow: hidden;
 	float: left;
 	text-align: center;
-	padding: 40px 25px;
+	padding: 40px 43px;
 	border-bottom: 4px solid #A78D76;
 	font-family: Calibri;
 	font-size: 17px;
@@ -37,12 +37,13 @@ body{
 .menu li.logo {
 	padding-top: 0px;
 	padding-bottom: 0px;
-	padding-right: 33px;
+	padding-right: 47px;
+	border-bottom: 0;
 }
 
 .menu li.logo img{
-	width: 96px;
-	height: 96px;
+	width: 128px;
+	height: 128px;
 }
 
 .menu li.item:hover, li.active {
@@ -52,15 +53,9 @@ body{
 /* CONTAINER */
 
 .container {
-
-}
-
-/* SLIDER */
-
-.slider-container {
 	float: center;
 	position: relative;
-	width: 1000px;
+	width: 1280px;
 	margin: 0 auto;
 	text-align: left;
 }
@@ -69,12 +64,18 @@ body{
 	position: relative;
 	padding-left:0;
 	width: 100%;
+	font-size: 17px;
+	font-family: Verdana;
 }
 
 .slider {
 	position: relative;
 	padding-left: 0;
 	width: 100%;
+}
+
+.slide {
+	width: 1280px;
 }
 
 .slider-buttons {
@@ -117,4 +118,59 @@ body{
 
 span.active {
 	background-color: #FFF;
+}
+
+/* FOOTER */
+
+.footer {
+	float: center;
+	position: relative;
+	width: 1280px;
+	margin: 0 auto;
+	text-align: center;
+	top: 50px;
+}
+
+.footer-content {
+	position: relative;
+	padding-left:0;
+	width: 100%;
+}
+
+.footer-content .fb{
+	font-size: 16px;
+	font-family: Verdana;
+	color: #777;
+	text-decoration: none;
+	text-align: left;
+	float: left;
+}
+
+.footer-content .fb img {
+	width: 32px;
+	height: 32px;
+	float: left;
+	padding: 5px;
+}
+
+.footer .span {
+	float: center;
+	margin: 0 auto;
+	width: 1000px;
+	border-top: 1px solid #AAA;
+	padding-bottom: 40px;
+}
+
+.footer .logo-footer {
+	width: 64px;
+	height: 64px;
+	float: center;
+}
+
+.footer p {
+	float: right;
+	text-align: right;
+	font-size: 16px;
+	font-family: Verdana;
+	color: #777;
 }
