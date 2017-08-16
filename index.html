@@ -10,7 +10,6 @@
 	<link rel="icon" type="image/x-icon" href="img/favicon.ico">
 	<link rel="shortchut icon" type="image/x-icon" href="img/favicon.ico">
 </head>
-
 <body>
 	<div class="header">
 		<ul class="menu">
@@ -62,47 +61,6 @@
 			<img class="logo-footer" src="img/logo-ico-footer.png">
 		</div>
 	</div>
+	<script type="text/javascript" src="js/javascript.js"></script>
 </body>
-
-<script type="text/javascript"></script>
-<script>
-	var slideIndex = 1;
-	showDivs(slideIndex);
-
-	function plusDivs(n) {
-  		showDivs(slideIndex += n);
-	}
-
-	function currentDiv(n) {
-  		showDivs(slideIndex = n);
-	}
-
-	function showDivs(n) {
-  		var i;
-  		var x = document.getElementsByClassName("slide");
-  		var dots = document.getElementsByClassName("slider-page");
-
-  		if (n > x.length) {slideIndex = 1}    
-  		if (n < 1) {slideIndex = x.length}
-  		for (i = 0; i < x.length; i++) {
-     		x[i].style.display = "none";  
-		}
-  		for (i = 0; i < dots.length; i++) {
-     		dots[i].className = dots[i].className.replace(" active", "");
-  		}
-  		x[slideIndex-1].style.display = "block";  
-  		dots[slideIndex-1].className += " active";
-	}
-
-	function openPage(n){
-		var i;
-		var x = document.getElementsByClassName("item");
-
-		for(i = 0; i < x.length; i++){
-			x[i].className = x[i].className.replace(" active", "");
-		}
-		x[n-1].className += " active";
-	}
-</script>
-
 </html>
