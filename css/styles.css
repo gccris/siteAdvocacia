@@ -174,3 +174,37 @@ span.active {
 	font-family: Verdana;
 	color: #777;
 }
+
+
+/* FONTS */
+
+h4 {
+	text-align: center;
+	font-size: 40px;
+	font-family: Calibri;
+	font-weight: 600;
+	color: #312553;
+}
+h1 {
+	text-align: left;
+	font-size: 14px;
+	font-family: Calibri;
+	font-weight: 600;
+	color: #312553;
+}
+#map {
+	height: 400px;
+	width: 100%;
+}
+body{
+	font-size: 14px;
+	font-family: Calibri;
+	color: #312553;
+}
+label{
+	text-align: left;
+	font-size: 14px;
+	font-family: Calibri;
+	font-weight: 600;
+	color: #312553;
+}
