@@ -6,6 +6,7 @@ request.setRequestHeader( 'Content-Type', 'application/json' );
 
 var slideIndex = 1;
 showDivs(slideIndex);
+
 function plusDivs(n) {
 	showDivs(slideIndex += n);
 }
@@ -32,21 +33,39 @@ function showDivs(n) {
 		slideIndex++;
 		if (slideIndex > slide.length) {
 			slideIndex = 1
-		} 
+		}
 		setTimeout(showDivs, 5000); // Change image every 5 seconds
 	}
 }
 
 function openPage(n){
 	var i;
-	var x = document.getElementsByClassName("item");
+	var itens = document.getElementsByClassName("item");
+	var title = document.getElementById("title");
 
-	for(i = 0; i < x.length; i++){
-		x[i].className = x[i].className.replace(" active", "");
+	for(i = 0; i < itens.length; i++){
+		itens[i].className = itens[i].className.replace(" active", "");
 	}
-	x[n-1].className += " active";
-	if(n == 5) // contato
+	itens[n-1].className += " active";
+	
+	if(n == 1){
+		title.textContent = "HOME";
+	}
+	if(n == 2){
+		title.textContent = "O ESCRITÓRIO";
+	}
+	if(n == 3){
+		title.textContent = "ÁREAS DE ATUAÇÃO";
+	}
+	if(n == 4){
+		title.textContent = "ADVOGADOS";
+	}
+	if(n == 5){ // contato
 		$('#container').load('http://localhost/site/contato.html');
-	if(n == 6) // maps
+		title.textContent = "CONTATO";
+	}
+	if(n == 6){ // maps
 		$('#container').load('http://localhost/site/maps.html');
+		title.textContent = "LOCALIZAÇÃO";
+	}
 }

@@ -1,11 +1,22 @@
 /* MAIN */
 
 body{
+	margin: 0;
+	top: 0;
 }
 
 /* MENU */
 
-.header {
+.header{
+	margin-top: -18px;
+	background-size: 100%;
+	background-image: url("../img/header.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 350px;
+}
+
+.headcont {
 	float: center;
 	position: relative;
 	width: 1280px;
@@ -15,11 +26,13 @@ body{
 }
 
 .menu {
+	top: 20px;
 	list-style-type: none;
 	position: relative;
 	padding-left: 0;
 	width: 100%;
 	border-top: 4px solid #A78D76;
+	height:100%;
 }
 
 .menu li {
@@ -31,28 +44,42 @@ body{
 	font-family: Calibri;
 	font-size: 17px;
 	font-weight: 600;
-	color: #312553;
+	color: #777;
 }
 
 .menu li.logo {
 	padding-top: 0px;
 	padding-bottom: 0px;
-	padding-right: 47px;
+	padding-left: 49px;
+	padding-right: 57px;
 	border-bottom: 0;
 }
 
 .menu li.logo img{
 	width: 128px;
-	height: 128px;
 }
 
 .menu li.item:hover, li.active {
-	border-bottom: 4px solid #312553;
+	border-bottom: 4px solid #352553;
+	color: #FFF;
+	/*background-image: url("../img/menu-selected.png");*/ /*CASO QUEIRA UTILIZAR O BLUR NO MENU*/
+	background-size: 100% 100%;
+}
+
+#title {
+	text-align: center;
+	float: middle;
+	padding-top: 150px;
+	color: #BBB;
+	font-family: Calibri;
+	font-size: 30px;
+	font-weight: 600;
 }
 
 /* CONTAINER */
 
 .container {
+	top: 20px;
 	float: center;
 	position: relative;
 	width: 1280px;
@@ -66,6 +93,7 @@ body{
 	width: 100%;
 	font-size: 17px;
 	font-family: Verdana;
+	color: #666;
 }
 
 .slider {
@@ -91,18 +119,18 @@ body{
 	position: relative;
 	float: left;
 	font-size: 20px;
-	color: #A78D76;
+	color: #352553;
 }
 
 .slider-right {
  	position: relative;
  	float: right;
- 	color: #A78D76;
+ 	color: #352553;
  	font-size: 20px;
 }
 
 .slider-page {
-	background-color: #A78D76;
+	background-color: #352553;
 	display: inline-block;
 	text-align:center;
 	border-radius: 50%;
@@ -173,6 +201,47 @@ span.active {
 	font-size: 16px;
 	font-family: Verdana;
 	color: #777;
+	right: 0;
+}
+
+/* TOOLTIP */
+
+.dev {
+	font-weight: 600;
+}
+
+.dev .tooltiptext {
+    visibility: hidden;
+    min-width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    border-radius: 6px;
+    font-size: 13px;
+
+    position: absolute;
+    bottom: 100%;
+    right:0;
+
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.dev .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.dev:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
 }
 
 
