@@ -44,7 +44,7 @@ body{
 	font-family: Calibri;
 	font-size: 17px;
 	font-weight: 600;
-	color: #777;
+	color: #A78D76;
 }
 
 .menu li.logo {
@@ -69,10 +69,10 @@ body{
 #title {
 	text-align: center;
 	float: middle;
-	padding-top: 150px;
-	color: #BBB;
+	padding-top: 140px;
+	color: #DDD;
 	font-family: Calibri;
-	font-size: 30px;
+	font-size: 40px;
 	font-weight: 600;
 }
 
