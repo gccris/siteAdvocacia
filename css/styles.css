@@ -277,3 +277,53 @@ label{
 	font-weight: 600;
 	color: #312553;
 }
+
+/* Area de Atuacao */
+
+#divMenuAtuacao {
+	position:relative;
+	margin: 0;
+    padding: 0;
+	overflow: hidden;	
+}
+
+#ulMenuAtuacao {
+	position:relative;
+	left:27%;
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#ulMenuAtuacao li {
+    float: left;
+	border:0;
+}
+
+#ulMenuAtuacao li a {
+    display: block;
+    padding: 8px;
+	text-decoration: none;
+	padding-bottom:13px; /* para a borda de baixo */
+	padding-right:45px;
+	color:gray;
+}
+#ulMenuAtuacao li a:hover {
+    background-color: #bcd;
+}
+
+#ulMenuAtuacao li a:active {
+    background-color: #abc;
+}
+
+#ulMenuAtuacao  li img{
+    width:17px;
+	height:17px;
+	padding-right:4px;
+}
+
+#divAtuacaoContent {
+	position:relative;
+	margin:0;
+	padding:0;
+}

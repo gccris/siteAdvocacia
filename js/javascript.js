@@ -55,6 +55,7 @@ function openPage(n){
 		title.textContent = "O ESCRITÓRIO";
 	}
 	if(n == 3){
+		$('#container').load('http://localhost/site/atuacao.html');
 		title.textContent = "ÁREAS DE ATUAÇÃO";
 	}
 	if(n == 4){
