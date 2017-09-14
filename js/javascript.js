@@ -52,6 +52,7 @@ function openPage(n){
 		title.textContent = "HOME";
 	}
 	if(n == 2){
+		$('#container').load('http://localhost/site/escritorio.html');
 		title.textContent = "O ESCRITÓRIO";
 	}
 	if(n == 3){
