@@ -10,10 +10,11 @@ body{
 .header{
 	margin-top: -18px;
 	background-size: 100%;
+	min-width: 1280px;
 	background-image: url("../img/header.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
-	height: 350px;
+	min-height: 350px;
 }
 
 .headcont {
@@ -39,7 +40,7 @@ body{
 	overflow: hidden;
 	float: left;
 	text-align: center;
-	padding: 40px 43px;
+	padding: 42px 52px;
 	border-bottom: 4px solid #A78D76;
 	font-family: Calibri;
 	font-size: 17px;
@@ -50,13 +51,17 @@ body{
 .menu li.logo {
 	padding-top: 0px;
 	padding-bottom: 0px;
-	padding-left: 49px;
-	padding-right: 57px;
+	padding-left: 44px;
+	padding-right: 60px;
 	border-bottom: 0;
 }
 
 .menu li.logo img{
-	width: 128px;
+	width: 256px;
+}
+
+.menu li.home{
+	padding: 42px 10px;
 }
 
 .menu li.item:hover, li.active {
@@ -85,6 +90,7 @@ body{
 	width: 1280px;
 	margin: 0 auto;
 	text-align: left;
+	min-height: 325px;
 }
 
 .content {
@@ -100,10 +106,31 @@ body{
 	position: relative;
 	padding-left: 0;
 	width: 100%;
+	max-height: 500px;
 }
 
 .slide {
 	width: 1280px;
+}
+
+.slider-text {
+	position: relative;
+	float: top;
+	text-align: right;
+	top: -200px;
+	margin-right: 20px;
+}
+
+.slider-title{
+	font-size: 32px;
+	color: #352553;
+	font-weight: 600;
+}
+
+.slider-subtitle{
+	font-size: 20px;
+	color: white;
+	font-weight: 600;
 }
 
 .slider-buttons {
@@ -112,7 +139,7 @@ body{
 	text-align: center;
 	margin-left: 10px;
 	margin-right: 10px;
-	top: -40px;
+	top: -180px;
 }
 
 .slider-left {
@@ -326,4 +353,21 @@ label{
 	position:relative;
 	margin:0;
 	padding:0;
+}
+
+.contact_mail{
+	float: left;
+	font-weight: 600;
+	font-size: 18px;
+}
+
+.contact_phone {
+	float: right;
+	text-align: right;
+	font-size: 16px;
+}
+
+.contact_phone p{
+	font-weight: 600;
+	font-size: 18px;
 }

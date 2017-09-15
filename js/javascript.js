@@ -5,7 +5,17 @@ request.setRequestHeader( 'Content-Type', 'application/json' );
 
 
 var slideIndex = 1;
-showDivs(slideIndex);
+divTime();
+
+function divTime(){
+	var slide = document.getElementsByClassName("slide");
+	showDivs(slideIndex);
+	slideIndex++;
+	if (slideIndex > slide.length) {
+		slideIndex = 1
+	}
+	setTimeout(divTime, 5000); // Change image every 5 seconds
+}
 
 function plusDivs(n) {
 	showDivs(slideIndex += n);
@@ -30,11 +40,6 @@ function showDivs(n) {
 		}
 		slide[slideIndex-1].style.display = "block";  
 		dots[slideIndex-1].className += " active";
-		slideIndex++;
-		if (slideIndex > slide.length) {
-			slideIndex = 1
-		}
-		setTimeout(showDivs, 5000); // Change image every 5 seconds
 	}
 }
 
@@ -59,14 +64,11 @@ function openPage(n){
 		$('#container').load('http://localhost/site/atuacao.html');
 		title.textContent = "ÁREAS DE ATUAÇÃO";
 	}
-	if(n == 4){
-		title.textContent = "ADVOGADOS";
-	}
-	if(n == 5){ // contato
+	if(n == 4){ // contato
 		$('#container').load('http://localhost/site/contato.html');
 		title.textContent = "CONTATO";
 	}
-	if(n == 6){ // maps
+	if(n == 5){ // maps
 		$('#container').load('http://localhost/site/maps.html');
 		title.textContent = "LOCALIZAÇÃO";
 	}
