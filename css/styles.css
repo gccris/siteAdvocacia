@@ -32,7 +32,7 @@ body{
 	position: relative;
 	padding-left: 0;
 	width: 100%;
-	border-top: 4px solid #A78D76;
+	border-top: 4px solid #A6907F;
 	height:100%;
 }
 
@@ -41,23 +41,23 @@ body{
 	float: left;
 	text-align: center;
 	padding: 42px 52px;
-	border-bottom: 4px solid #A78D76;
+	border-bottom: 4px solid #A6907F;
 	font-family: Calibri;
 	font-size: 17px;
 	font-weight: 600;
-	color: #A78D76;
+	color: #BBB;
 }
 
 .menu li.logo {
 	padding-top: 0px;
 	padding-bottom: 0px;
-	padding-left: 44px;
-	padding-right: 60px;
+	padding-left: 12px;
+	padding-right: 28px;
 	border-bottom: 0;
 }
 
 .menu li.logo img{
-	width: 256px;
+	width: 320px;
 }
 
 .menu li.home{
@@ -65,7 +65,7 @@ body{
 }
 
 .menu li.item:hover, li.active {
-	border-bottom: 4px solid #352553;
+	border-bottom: 4px solid #68619F;
 	color: #FFF;
 	/*background-image: url("../img/menu-selected.png");*/ /*CASO QUEIRA UTILIZAR O BLUR NO MENU*/
 	background-size: 100% 100%;
@@ -90,7 +90,7 @@ body{
 	width: 1280px;
 	margin: 0 auto;
 	text-align: left;
-	min-height: 325px;
+	min-height: 380px;
 }
 
 .content {
@@ -113,51 +113,31 @@ body{
 	width: 1280px;
 }
 
-.slider-text {
-	position: relative;
-	float: top;
-	text-align: right;
-	top: -200px;
-	margin-right: 20px;
-}
-
-.slider-title{
-	font-size: 32px;
-	color: #352553;
-	font-weight: 600;
-}
-
-.slider-subtitle{
-	font-size: 20px;
-	color: white;
-	font-weight: 600;
-}
-
 .slider-buttons {
 	position: relative;
 	float: center;
 	text-align: center;
 	margin-left: 10px;
 	margin-right: 10px;
-	top: -180px;
+	top: -35px;
 }
 
 .slider-left {
 	position: relative;
 	float: left;
 	font-size: 20px;
-	color: #352553;
+	color: #68619F;
 }
 
 .slider-right {
  	position: relative;
  	float: right;
- 	color: #352553;
+ 	color: #68619F;
  	font-size: 20px;
 }
 
 .slider-page {
-	background-color: #352553;
+	background-color: #68619F;
 	display: inline-block;
 	text-align:center;
 	border-radius: 50%;
@@ -378,12 +358,14 @@ label{
 	float: left;
 	font-weight: 600;
 	font-size: 18px;
+	margin-left: 50px
 }
 
 .contact_phone {
 	float: right;
 	text-align: right;
 	font-size: 16px;
+	margin-right: 50px;
 }
 
 .contact_phone p{
