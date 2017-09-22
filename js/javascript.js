@@ -57,19 +57,19 @@ function openPage(n){
 		title.textContent = "HOME";
 	}
 	if(n == 2){
-		$('#container').load('http://localhost/site/escritorio.html');
+		$('#container').load('escritorio.html');
 		title.textContent = "O ESCRITÓRIO";
 	}
 	if(n == 3){
-		$('#container').load('http://localhost/site/atuacao.html');
+		$('#container').load('atuacao.html');
 		title.textContent = "ÁREAS DE ATUAÇÃO";
 	}
 	if(n == 4){ // contato
-		$('#container').load('http://localhost/site/contato.html');
+		$('#container').load('contato.html');
 		title.textContent = "CONTATO";
 	}
 	if(n == 5){ // maps
-		$('#container').load('http://localhost/site/maps.html');
+		$('#container').load('maps.html');
 		title.textContent = "LOCALIZAÇÃO";
 	}
 }
