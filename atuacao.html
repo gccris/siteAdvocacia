@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html>
 	<body>
+	<script type="text/javascript">
+		atualizaTexto('Trabalhista');
+	</script>
 		<div id="divMenuAtuacao">
 			<ul id="ulMenuAtuacao">
 				<li>
-					<a href="#trabalhista"><img src="img/atuacao_trabalhista.png"/>Trabalhista </a>
+					<a id="aTrab" href="#trabalhista" onclick="atualizaTexto('Trabalhista');"><img src="img/atuacao_trabalhista.png"/>Trabalhista </a>
 				</li>
 				<li>
-					<a href="#civil"><img src="img/atuacao_civil.png" />Cível</a>
+					<a id="aCivil" href="#civil" onclick="atualizaTexto('Civil');"><img src="img/atuacao_civil.png" />Civil</a>
 				</li>
 			</ul>
 		</div>
 		<div id="divContentAtuacao">
 			<div id="divImgAtuacao">
-				<img src="img/area_trabalhista.jpg" />
+				<img id="imgAtuacao" src="" />
 			</div>
 			<div id="divTextoAtuacao" class="content">
-				<h3 id="atuacaoTitulo">Trabalhista</h3>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed nunc in enim iaculis auctor. Vestibulum id risus auctor, tincidunt erat in, pellentesque sem. Integer aliquam lacus urna, a aliquam metus fringilla id. Nulla erat risus, vulputate vel quam quis, mattis suscipit massa. Duis tortor arcu, vulputate in semper sit amet, commodo sit amet ex. Mauris nec placerat metus. Sed luctus gravida libero, non suscipit dui bibendum quis. Fusce ullamcorper non metus vitae interdum. Aenean luctus, augue eget porta suscipit, metus sapien rutrum mi, vel volutpat justo sapien non ligula. Sed neque urna, volutpat eu faucibus in, consequat eu lacus. Sed cursus laoreet finibus. Duis nec accumsan augue. Vivamus nec volutpat mi.
+				<h3 id="atuacaoTitulo"></h3>
+				<p id="pTexto">
+					
 				</p>
 			</div>
 		</div>

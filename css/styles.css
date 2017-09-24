@@ -296,7 +296,7 @@ label{
 
 #ulMenuAtuacao {
 	position:relative;
-	left:27%;
+	left:40.3%;
 	list-style-type: none;
     margin: 0;
     padding: 0;
@@ -320,7 +320,7 @@ label{
     background-color: #bcd;
 }
 
-#ulMenuAtuacao li a:active {
+#ulMenuAtuacao li a.active {
     background-color: #abc;
 }
 
@@ -330,14 +330,10 @@ label{
 	padding-right:4px;
 }
 
-#divAtuacaoContent {
-	position:relative;
-	margin:0;
-	padding:0;
-}
-
 #divContentAtuacao {
 	overflow:auto;
+	padding-top: 10px;
+	/* background-color:#68619F; */
 }
 
 #divImgAtuacao {
@@ -345,13 +341,10 @@ label{
 	margin-right:10px;	
 }
 
-#divTextoAtuacao {
-	
-}
-
 #divImgAtuacao img{
 	width:450px;
 	display:block;
+	border-radius:20px;
 }
 
 .contact_mail{

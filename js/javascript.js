@@ -3,7 +3,6 @@ this.request.open(this.method, this.url, true);
 request.setRequestHeader( 'Access-Control-Allow-Origin', '*');
 request.setRequestHeader( 'Content-Type', 'application/json' );
 
-
 var slideIndex = 1;
 divTime();
 
@@ -72,4 +71,22 @@ function openPage(n){
 		$('#container').load('maps.html');
 		title.textContent = "LOCALIZAÇÃO";
 	}
+}
+
+function atualizaTexto(identificacao) {
+	if(identificacao == "Trabalhista") {
+		$("#aTrab").attr("class","active");
+		$("#aCivil").attr("class","");
+		$("#imgAtuacao").attr("src","img/area_trabalhista.jpg");
+		$('#atuacaoTitulo').html("Trabalhista");
+		$('#pTexto').html("Oferecemos o direcionamento à prevenção e solução aos empregados e empregadores através de consultoria, defesa administrativa e judicial.");
+	}
+	else if(identificacao == "Civil") {
+		$("#aCivil").attr("class","active");
+		$("#aTrab").attr("class","");
+		$("#imgAtuacao").attr("src","img/area_civil.png");
+		$('#atuacaoTitulo').html("Civil");
+		$('#pTexto').html("Com o Direito Civil, temos o intuito de tratar o conjunto de normas jurídicas que regem os vínculos pessoais ou patrimoniais entre entidades/pessoas privadas, sejam elas físicas ou jurídicas, de caráter privado ou público. Nosso objetivo consiste em proteger e defender os interesses da pessoa na ordem moral e patrimonial.");
+	}
+		
 }
